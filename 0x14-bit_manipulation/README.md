@@ -1,1 +1,1 @@
-# :Computer: :trollface: Bit Manipulation :trollface: :Computer:
+# :computer: :trollface: Bit Manipulation :trollface: :computer:
