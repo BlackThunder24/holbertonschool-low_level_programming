@@ -6,25 +6,25 @@
  */
 void hash_table_print(const hash_table_t *ht)
 {
-  unsigned int index = 0, isOn = 0;
+unsigned int index = 0, isOn = 0;
 
-  if (ht == NULL)
-    return;
+if (ht == NULL)
+return;
 
-  printf("{");
-  while (index < ht->size)
-    {
-      while (ht->array[index])
-	{
-	  if (isOn == 0)
-	    isOn = 1;
-	  else
-	    printf(", ");
+printf("{");
+while (index < ht->size)
+{
+while (ht->array[index])
+{
+if (isOn == 0)
+isOn = 1;
+else
+printf(", ");
 
-	  printf("'%s': '%s'", ht->array[index]->key, ht->array[index]->value);
-	  ht->array[index] = ht->array[index]->next;
-	}
-      index++;
-    }
-  printf("}\n");
+printf("'%s': '%s'", ht->array[index]->key, ht->array[index]->value);
+ht->array[index] = ht->array[index]->next;
+}
+index++;
+}
+printf("}\n");
 }
